@@ -8,12 +8,93 @@
 }
 
 body {
+  height: 100vh;
+  margin:0;
+  background-color: #5D94FB;
+  padding: 2em;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+  position: fixed;
+  top:1em;
+  left:1em;
+  background-color: #f006;
+}
+
+header h1 {
   margin:0;
 }
 
-button:not([disabled]) {
-  cursor:pointer;
+article h1 {
+  margin: 0;
+  position: fixed;
+  padding: 0.5em;
 }
+
+
+article {
+  /* background-color: #B4E5AC; */
+  width: 80vmin;
+  aspect-ratio: 1/1;
+  position: relative;
+  /* margin-top: 5em; */
+    /* background-image: url("images/mariokaart1"); */
+  /* margin: 2em; BAH BAH BAH */
+  /* line-height: 50em; */
+  /* background-image: url(mariokaart1);
+  background-image: url("images/mariokaart1.jpg"); */
+
+  background-color: red;
+}
+
+
+
+article img:nth-of-type(1) {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+/* .image1 {
+  position: relative;
+  top: 0;
+  left:0;
+} */
+
+article img:nth-of-type(2) {
+  position: absolute;
+  bottom: 60%;
+  width: 10%;
+}
+
+
+main button {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-bottom: 5em;
+}
+
+container {
+  display: flex;
+  justify-content: center;
+}
+
+button:not([disabled]) {
+  cursor: pointer;
+}
+
 
 
 

@@ -12,11 +12,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Jij
 
 ### Ontwerper:
-Xavier Ruperink
+Xavier (vervangen door jouw naam)
 
 #### Je startniveau:
-Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
-Blauw
+Mijn startniveau is: Blauw
+
 
 
 
@@ -27,7 +27,8 @@ Blauw
 
   ### De eerste versie/schets:
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="eerste versie/schets">
-
+  <img src="readme-images/Screenshot 2023-04-17 at 16.50.29" width= "375px> 
+<img src="readme-images/il_570xN.3116183004_ndw1.jpg.avif" width="375px" alt="eerste versie/schets">
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
