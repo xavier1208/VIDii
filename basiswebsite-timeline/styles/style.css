@@ -1,0 +1,296 @@
+/*************/
+/* CSS RESET */
+/*************/
+
+*/ *,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+:root {
+  --color-headings: crimson;
+  --titellevel1: white;
+  --titellevel2: #6dadf8;
+  --titellevel3: yellow;
+  --titellevel4: #b60000;
+  --achtergrondkleur: #5d94fb;
+  --achtergrondkleursection: rgb(255, 89, 0);
+  --border2: black;
+  --achtergrondkleurlevel2: rgb(232, 232, 155);
+  --achtergrondkleurlevel3: blue;
+  --achtergrondkleurlevel4: #2967d8;
+  --buttonbackground: grey;
+  --buttonshadow: #999;
+  --buttonshadow2: #666;
+  --buttonbackground2: #e8b703;
+  --buttonhover: #d1a502;
+}
+
+/********************/
+/* ALGEMENE STYLING */
+/********************/
+
+h1 {
+  color: var(--color-headings);
+}
+
+@font-face {
+  font-family: myfirstfont;
+  src: url(../fonts/mariofont.ttf);
+}
+
+@font-face {
+  font-family: font2;
+  src: url(../fonts/SuperMario256.ttf);
+}
+/********************/
+/* STRUCTUUR EN LAYOUT */
+/********************/
+
+body {
+  cursor: url(../images/icons8-hand-cursor-50.png), auto;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--achtergrondkleur);
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  position: fixed;
+  top: 2em;
+  left: 50;
+}
+
+header h1 {
+  margin: 0;
+  font-family: myfirstfont;
+}
+
+container {
+  display: flex;
+  justify-content: center;
+}
+
+/********************/
+/* MODULES/COMPONENTEN */
+/********************/
+article h1 {
+  margin: 0;
+  position: fixed;
+  padding: 0.5em;
+}
+
+article {
+  width: 80vmin;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+article > img:nth-of-type(1) {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  position: relative;
+  margin-top: 9em;
+}
+
+article img:nth-of-type(2) {
+  position: absolute;
+  bottom: 86%;
+  width: 10%;
+  transition: 1s;
+}
+
+article img:nth-of-type(2).map1 {
+  translate: 190% 0%;
+  transition: 2s;
+}
+
+article img:nth-of-type(2).map2 {
+  translate: 190% 720%;
+  transition: 2s;
+}
+
+article img:nth-of-type(2).map3 {
+  translate: 715% 720%;
+  transition: 2s;
+}
+
+/* BOWSER 1 */
+
+/* EXTRA INFORMATIE BLOKKEN */
+/* 1. je maakt bijv h1 aan in html 
+2. article section.map1 in css 
+3. je maakt 2x const aan in js
+4. je spreekt const aan bij next en previous button . 
+(bekijk regel 18 35 47)*/ 
+
+article section {
+  background-color: var(--achtergrondkleursection);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content min-content 1fr min-content;
+  position: absolute;
+  top: 12%;
+  right: 13%;
+  width: 47%;
+  height: 59%;
+  border-right: 3px solid var(--border2);
+  border-bottom: 3px solid var(--border2);
+  border-left: 3px solid var(--titellevel1);
+  border-top: 3px solid var(--titellevel1);
+  padding: 1em;
+}
+
+article section h2 {
+  color: var(--titellevel1);
+  font-family: font2;
+  font-size: clamp(1em, 3vw, 2em);
+  margin: 0;
+  text-align: center;
+}
+
+article section h3 {
+  color: var(--titellevel1);
+  text-align: center;
+  font-size: clamp(1em, 3vw, 2em);
+  font-family: font2;
+  margin: 0;
+}
+
+article section h4 {
+  color: var(--titellevel1);
+  font-size: 0.8em;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 350px;
+  margin: 0;
+  order: 1;
+}
+
+article section img {
+  width: clamp(5em, 15vw, 10em);
+  justify-self: center;
+  align-self: center;
+}
+
+article section.map1 {
+  background-color: var(--achtergrondkleurlevel2);
+}
+
+article section.map2 {
+  background-color: var(--achtergrondkleurlevel3);
+}
+
+article section.map3 {
+  background-color: var(--achtergrondkleurlevel4);
+}
+
+article section.map0 h2 {
+  color: var(--titellevel1);
+}
+
+article section.map1 h2 {
+  color: var(--titellevel2);
+}
+
+article section.map2 h2 {
+  color: var(--titellevel3);
+}
+
+article section.map3 h2 {
+  color: var(--titellevel4);
+}
+
+article section.map0 h3 {
+  color: var(--titellevel1);
+}
+
+article section.map1 h3 {
+  color: var(--titellevel2);
+}
+
+article section.map2 h3 {
+  color: var(--titellevel3);
+}
+
+article section.map3 h3 {
+  color: var(--titellevel4);
+}
+
+article section.map0 h4 {
+  color: var(--titellevel1);
+}
+
+article section.map1 h4 {
+  color: var(--titellevel2);
+}
+
+article section.map2 h4 {
+  color: var(--titellevel1);
+}
+
+article section.map3 h4 {
+  color: var(--titellevel1);
+}
+
+button:nth-of-type(2) {
+  color: var(--titellevel1);
+}
+
+/********************/
+/* Overige stijlen */
+/********************/
+
+main button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  background-color: var(--buttonbackground);
+  text-align: center;
+  text-decoration: none;
+  color: var(--titellevel1);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px var(--buttonshadow);
+  margin: 1em;
+  font-family: myfirstfont;
+  font-size: small;
+  cursor: url(../images/icons8-super-mario-50.png), auto;
+}
+
+main button:not([disabled]) {
+  background-color: var(--buttonbackground2);
+  cursor: url(../images/icons8-super-mario-50.png), auto;
+}
+
+main button:not([disabled]):hover {
+  background-color: var(--buttonhover);
+  cursor: url(../images/icons8-super-mario-50.png), auto;
+  outline: none;
+}
+
+main button:not([disabled]):active {
+  background-color: var(--buttonhover);
+  box-shadow: 0 5px var(--buttonshadow2);
+  transform: translateY(4px);
+  cursor: url(../images/icons8-super-mario-50.png), auto;
+}
+
+main button:focus {
+  outline-offset: 5px;
+  outline: 5px solid var(--color-headings);
+}
+
+button:not([disabled]) {
+  cursor: url(../images/icons8-super-mario-50.png), auto;
+}
+
+/* ... */
