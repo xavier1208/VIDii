@@ -11,7 +11,7 @@ Nb. Door _open_ toe te voegen aan een _details_ element kun je deze standaard op
 
 ### Ontwerper:
 
-Xavier (vervangen door jouw naam)
+Xavier 
 
 #### Je startniveau:
 
@@ -44,11 +44,12 @@ Aan deze technieken/punten wil ik werken:
 
 ### Bevinding 1:
 
-wat erg slordig van mij was is dat ik het vierkantje waar Bowser in staat met extra informatie had gemaakt met figma, en dus niet heb gecodeerd
+Wat erg slordig van mij was, was dat ik het vierkantje waar Bowser in staat met extra informatie had gemaakt met figma.
+Dit had ik dus niet gecodeerd.
 
 #### oplossing:
 
-ik heb dit opgelost door een section toe te voegen
+ik heb dit opgelost door een section toe te voegen en het te coderen 
 
 ### Bevinding 2:
 
@@ -136,7 +137,7 @@ opgelost door eerst de custom properties toe te voegen, dan de algemene styling,
 ### Je uitkomst - karakteristiek screenshot(s):
    <img src="images/mirofeedback.png" width="375px" alt="mirofeedback">
 
-  <img src="readme-images/resultaat.png" width="375px" alt="final ontwerp">
+  <img src="images/resultaat.png" width="375px" alt="final ontwerp">
 
 ### Dit ging goed/Heb ik geleerd:
 Ik heb heel veer verschillende dingen geleerd:
